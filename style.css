@@ -5,18 +5,83 @@
 
 .global_container{
     display:flex;
-       
+      
 }
+
 
 .right_container{
    display:flex;
    flex-direction: column;
    justify-content: space-around;
+   padding:3em;
+     
 }
 
 #twitter_logo{
-    width: 42.57px;
-    height: 34.6px;
+    max-width: 42.57px;
+    max-height: 34.6px;
 }
 
+.big_phrase{
+    width: 30em;
+}
+
+.phrase_1{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif    
+}
+
+.buttons_container{
+    width:16em;
+    
+}
+
+.button_1{
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+    border:none;
+    
+}
+
+.button_1:before{
+    content:url(/Assets/Google__G__Logo.svg.png);
+    
+
+}
+.button_2{
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+    border: none;
+}
+
+
+.o{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.blue_button{
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(29, 155, 240);
+    color:white;
+}
+
+.question{
+    font-style: bold;
+    font-size: 2em;
+}
+
+.login{
+    width: 20em;
+    height: 2em;
+    border-radius: 2em;
+    border: none;
+    color:rgb(29, 155, 240);
+}
 
