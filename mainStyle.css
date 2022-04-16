@@ -3,7 +3,7 @@
 }
 
 body{
-   
+   display:flex;
 }
 
 .bird_logo{
@@ -12,16 +12,15 @@ body{
 }
 
 
-.container_top{
-    border: 1px solid black;  
-    display:flex;
-   
+.flex_container{
+    border: 1px solid black;    
 }
 
 
 .nav_container{
     border:1px solid red;   
     width:10em;
+    margin-left:20em;
 }
 
 .home_button{
@@ -166,7 +165,7 @@ body{
 .avatar_button{
     width:16em;
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 
 .dots{
@@ -179,13 +178,40 @@ body{
     flex-direction: column;
 }
 
-.center_container{
-    border:blue;
+.top{
+    width:20em;
+    height: 2em;
+    display:flex;
+    justify-content: space-between;
+}
+
+.star{
+    width:1.5em;
+}
+
+.word_top{
+    font-style: bold;
+}
+
+.foto_perfil2{
+    width:2em;
+}
+
+.main_container{
+    border:1px solid blue;   
+}
+
+.place_text{
+    display: flex;
+}
+
+.icons{
     display:flex;
     
 }
 
-.center_containerTop{
-
+.tweet_transparent{
+    display:flex;
+    
+    
 }
-
