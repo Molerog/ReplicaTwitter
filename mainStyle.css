@@ -1,0 +1,191 @@
+*{
+
+}
+
+body{
+   
+}
+
+.bird_logo{
+    max-width: 33px;
+    max-height: 34.6px;
+}
+
+
+.container_top{
+    border: 1px solid black;  
+    display:flex;
+   
+}
+
+
+.nav_container{
+    border:1px solid red;   
+    width:10em;
+}
+
+.home_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.home{
+    width:2em;
+    
+}
+
+.word_home{
+    font-style: bold;
+}
+
+.explore_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.explore{
+    width:2em;
+    
+}
+
+.word_explore{
+    font-style: bold;
+}
+
+.notifications_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.notifications{
+    width:2em;
+    
+}
+
+.word_notifications{
+    font-style: bold;
+}
+
+.messages_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.messages{
+    width:2em;
+    
+}
+
+.word_messages{
+    font-style: bold;
+}
+
+.bookmark_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.bookmark{
+    width:2em;
+    
+}
+
+.word_bookmark{
+    font-style: bold;
+}
+
+.lists_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.lists{
+    width:2em;
+    
+}
+
+.word_lists{
+    font-style: bold;
+}
+
+.profile_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile{
+    width:2em;
+    
+}
+
+.word_profile{
+    font-style: bold;
+}
+
+.more_button{
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.more{
+    width:2em;
+    
+}
+
+.word_more{
+    font-style: bold;
+}
+
+
+.blueTwitter_button{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.foto_perfil{
+    width:3em;
+}
+
+.avatar_button{
+    width:16em;
+    display: flex;
+    align-items: center;
+}
+
+.dots{
+    width:2em;
+       
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+}
+
+.center_container{
+    border:blue;
+    display:flex;
+    
+}
+
+.center_containerTop{
+
+}
+
