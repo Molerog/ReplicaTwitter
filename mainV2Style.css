@@ -1,33 +1,45 @@
-*{
+.container_general{
+    border-style: solid;
+    border-color: hsl(0, 100%, 50%); 
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+    max-width:80em;
+    margin:auto;
+  }
 
-}
+  .column_left{
+    border-style: solid;
+    border-color: hsl(111, 100%, 50%); 
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
 
-body{
-   display:flex;
-}
+  .column_center{
+    border-style: solid;
+    border-color: hsl(232, 100%, 50%); 
+    height: 100vh;
+  }
 
-.bird_logo{
+  .column_right{
+    border-style: solid;
+    border-color: hsl(304, 100%, 50%); 
+    height: 100vh;
+  }
+
+  .bird_logo{
     max-width: 33px;
     max-height: 34.6px;
 }
 
-
-.flex_container{
-    border: 1px solid black;    
+.twitter_botton{
+    width: 100%;
 }
 
-
-.nav_container{
-    border:1px solid red;   
-    width:10em;
-    margin-left:20em;
-}
-
-.home_button{
-    width:100%;
+button{
+    width:8em;
     display:flex;
-    justify-content: start;
-    align-items: center;
 }
 
 .home{
@@ -151,11 +163,19 @@ body{
     font-style: bold;
 }
 
+ul{
+    list-style: none;
+    padding:0;
+}
 
-.blueTwitter_button{
+.blue_botton{
     display:flex;
     justify-content: center;
-    
+}
+
+li{
+    line-height: 1em;
+    margin:2em;
 }
 
 .foto_perfil{
@@ -169,97 +189,23 @@ body{
 }
 
 .dots{
-    width:2em;
-       
+    width:2em;       
+}
+
+.avatar_button{
+    width:100%;
+    height: 4em;
+    display:flex;
+    justify-content: space-between;
+    padding:2em;
+}
+
+.avatar_name{
+    display:flex;
+
 }
 
 .nombre{
-    display: flex;
-    flex-direction: column;
+    text-align: left;
 }
-
-.container_top{
-    display:flex;    
-}
-
-.top{
-    width: 60%;
-    display:flex;
-    justify-content: space-between;    
-}
-
-.star{
-    width:1.5em;
-}
-
-.word_top{
-    font-style: bold;
-}
-
-.foto_perfil2{
-    width:2em;
-}
-
-.main_container{
-    border:1px solid blue;  
-    width: 50em; 
-}
-
-.box_text{
-    border: 1px solid purple;
-}
-
-.avatar2{
-    display:flex;
-    
-}
-
-.place_text{
-    display: flex;       
-}
-
-.text_width{
-    width:32.2em;
-}
-
-.icons_container{
-    display:flex;
-    margin-left:2.7em;
-    
-}
-
-.icons{
-    display:flex;
-    width:13em;
-}
-
-.tweet_transparent{
-    display:flex;
-    margin-left:13.3em;
-    
-}
-
-.container_publicacion{
-    border: 1px solid green;
-    display: flex;
-    width:60%;
-}
-
-.container_contenido{
-    margin-left:0.6em;
-    
-}
-
-.picture{
-    width:2em;
-}
-
-.noticias{
-    display:flex;
-}
-
-.column3{
-    border:1px solid green;
-}
-
 
