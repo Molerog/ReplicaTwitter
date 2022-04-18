@@ -6,6 +6,7 @@
     grid-template-columns: 2fr 5fr 3fr;
     max-width:80em;
     margin:auto;
+    
   }
 
   .column_left{
@@ -20,10 +21,10 @@
   .column_center{
     border-style: solid;
     border-color: hsl(232, 100%, 50%); 
-    min-height: 100vh; 
+    max-height: 100vh; 
     display:grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows:0.5fr 1.5fr 4fr 4fr
+    grid-template-rows:0.5fr 1fr 3fr 3fr
   }
 
 .column_center > div{
@@ -85,24 +86,207 @@
     justify-content: space-between;   
 }
 
-
 .symbols{
     display:flex;
     width:11em;
 }
 
-.tweet_button{
+.sym1{
     display:flex;
-    align-items:center;
+    width:1.5em;
+    margin-left:0.5em;
 }
 
-  .column_right{
+.sym2{
+    display:flex;
+    width:1.5em;
+    margin-left:1em;
+}
+
+.sym3{
+    display:flex;
+    width:1.5em;
+    margin-left:1em;
+}
+
+.sym4{
+    display:flex;
+    width:1.5em;
+    margin-left:1em;
+}
+
+.sym5{
+    display:flex;
+    width:1.5em;
+    margin-left:1em;
+}
+
+.sym6{
+    display:flex;
+    width:1.5em;
+    margin-left:1em;
+}
+
+.tweet_button{
+    display:flex;
+    align-items: center;   
+}
+
+.button_tweet{
+    display:flex;
+    justify-content: center;
+}
+
+.item_4{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.circulo_1{
+    display:flex;
+    justify-content: center;
+    outline:0;
+    border:none;
+    background-color: white;
+}
+
+.circulo1{
+    width:6em;  
+    height: 4em;
+}
+
+.flex_container5{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    border-style:solid;
+    border-color:black;
+}
+
+.button_text{
+    display:flex;
+    width: 100%;
+    text-align: left;
+}
+
+.bmw{
+     display:flex;
+}
+
+.dots1{
+    height:2.5vh; 
+    
+}
+
+.button_dots1{
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+
+.body_text{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.png_bmw{
+    width:40em;
+}
+
+.grey_bmw{
+    color:grey;
+}
+
+.button_pictures{
+    width:100%;
+    justify-content: center;
+    
+}
+.icons_bottom{
+    display:flex;
+    width: 100%;
+    justify-content: space-around; 
+    border-style: solid;
+    border-color: black; 
+    max-height:2.5vh;   
+    outline: 0;
+    border:none; 
+}
+
+.button_talk{
+    display:flex;
+    justify-content: center;
+    outline: 0;
+    border:none;
+}
+
+.button_arrow{
+    display:flex;
+    justify-content: center;
+    outline: 0;
+    border:none;
+}
+
+.button_hearth{
+    display: flex;
+    justify-content: center;
+    outline: 0;
+    border:none;
+}
+
+.button_upload{
+    display:flex;
+    justify-content: center;
+    outline: 0;
+    border:none;
+}
+
+.talk{
+    width:2em;
+}
+
+.arrow{
+    width:2em;
+}
+
+.hearth{
+    width:2em;
+}
+
+.upload{
+    width:2em;
+}
+
+.circulo_2{
+    display:flex;
+    justify-content: center;
+    outline:0;
+    border:none;
+    background-color: white;
+}
+
+.circulo2{
+    width:4em;  
+    height: 4em;
+}
+
+.png_netflix{
+    width:40em;
+}
+
+.grey_netflix{
+    color:grey;
+}
+
+.column_right{
     border-style: solid;
     border-color: hsl(304, 100%, 50%); 
     min-height: 100vh;
-  }
+}
 
-  .bird_logo{
+.bird_logo{
     max-width: 33px;
     max-height: 34.6px;
 }
