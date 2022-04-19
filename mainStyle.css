@@ -165,7 +165,8 @@ body{
 .avatar_button{
     width:16em;
     display: flex;
-    align-items: center;   
+    align-items: center; 
+    
 }
 
 .dots{
@@ -174,8 +175,7 @@ body{
 }
 
 .nombre{
-    display: flex;
-    flex-direction: column;
+    margin-left:0.5em;
 }
 
 .container_top{

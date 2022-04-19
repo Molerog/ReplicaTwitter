@@ -1,26 +1,25 @@
 
 .container_general{
-    border-style: solid;
-    border-color: hsl(0, 100%, 50%); 
+    /* border-style: solid; */
+    /*border-color: hsl(0, 100%, 50%);*/ 
     display: grid;
     grid-template-columns: 2fr 5fr 3fr;
     max-width:80em;
-    margin:auto;
-    
+    margin:auto; 
   }
 
   .column_left{
-    border-style: solid;
-    border-color: hsl(111, 100%, 50%); 
-    min-height: 100vh;
+    /* border-style: solid; */
+    /* border-color: hsl(111, 100%, 50%);  */
+    max-height: 98vh;
     display:flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .column_center{
-    border-style: solid;
-    border-color: hsl(232, 100%, 50%); 
+    /* border-style: solid; */
+    /* border-color: hsl(232, 100%, 50%);  */
     max-height: 100vh; 
     display:grid;
     grid-template-columns: 2fr 8fr;
@@ -28,13 +27,13 @@
   }
 
 .column_center > div{
-    border-style:solid;
-    border-color:hsl(0, 100%, 50%)   
+    /* border-style:solid; */
+    /* border-color:hsl(0, 100%, 50%);   */
   }
 
 .column_right > div{
-    border-style:solid;
-    border-color:hsl(0, 100%, 50%)   
+    /* border-style:solid; */
+    /* border-color:hsl(0, 100%, 50%);    */
 }
 
 .item_1{
@@ -45,14 +44,31 @@
     display:flex;
     justify-content: space-between;
     padding:0.5em;
+    cursor: pointer;
+}
+
+.hidden_star{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    position:relative; 
+    transition: 200ms;  
+}
+
+.hidden_star:hover{
+    background-color: hsla(0, 14%, 86%, 0.48);
 }
 
 .home1{
     font-weight: 600;
     font-size: 1.5em;
+    
 }
 .star{
     width:1.5em;
+    position:absolute;
+    margin-left:0.1em;
+    margin-top:0.2em;
 }
 
 .flex_container2{
@@ -99,37 +115,37 @@
 .sym1{
     display:flex;
     width:1.5em;
-    margin-left:0.5em;
+    
 }
 
 .sym2{
     display:flex;
     width:1.5em;
-    margin-left:1em;
+    
 }
 
 .sym3{
     display:flex;
     width:1.5em;
-    margin-left:1em;
+    
 }
 
 .sym4{
     display:flex;
     width:1.5em;
-    margin-left:1em;
+    
 }
 
 .sym5{
     display:flex;
     width:1.5em;
-    margin-left:1em;
+    
 }
 
 .sym6{
     display:flex;
     width:1.5em;
-    margin-left:1em;
+    
 }
 
 .tweet_button{
@@ -140,6 +156,7 @@
 .button_tweet{
     display:flex;
     justify-content: center;
+    
 }
 
 .item_4{
@@ -165,8 +182,8 @@
     display:flex;
     justify-content: space-between;
     width:100%;
-    border-style:solid;
-    border-color:black;
+    /* border-style:solid; */
+    /* border-color:black; */
 }
 
 .button_text{
@@ -213,8 +230,8 @@
     display:flex;
     width: 100%;
     justify-content: space-around; 
-    border-style: solid;
-    border-color: black; 
+    /* border-style: solid; */
+    /* border-color: black;  */
     max-height:2.5vh;   
     outline: 0;
     border:none; 
@@ -286,8 +303,8 @@
 }
 
 .column_right{
-    border-style: solid;
-    border-color: hsl(304, 100%, 50%); 
+    /* border-style: solid; */
+    /* border-color: hsl(304, 100%, 50%);  */
     min-height: 100vh;
     display:grid;
     grid-template-rows: 0.5fr 6fr 3fr 0.5fr
@@ -316,8 +333,8 @@
 }
 
 .textonly{
-    border-style: solid;
-    border-color: black;
+    /* border-style: solid; */
+    /* border-color: black; */
     height: 4vh;
 }
 
@@ -329,14 +346,14 @@
 }
 
 .flex_container6{
-    border-style: solid;
-    border-color:rgb(0, 0, 0);
+    /* border-style: solid; */
+    /* border-color:rgb(0, 0, 0); */
 } 
 
 .text_new{
     width:100%;
-    border-style: solid;
-    border-color: blueviolet;
+    /* border-style: solid; */
+    /* border-color: blueviolet; */
     display:flex;
     justify-content: space-evenly;
     margin-top:0.5em;
@@ -370,19 +387,45 @@
     color:white;
 }
 
-.entity:after{
-    content: 002E;
+a{
+    text-decoration: none;
 }
+
+
 
 .footer_container{
     text-decoration: inherit;
-    color: #536471
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a>span{
+    color:grey;
 }
 
 
 .bird_logo{
     max-width: 33px;
     max-height: 34.6px;
+    position:absolute;
+    top:0.7em;
+    
+}
+
+.hidden_bird{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left:0.5em;
+    transition: 200ms;  
+    cursor:pointer; 
+    position:relative; 
+}
+
+.hidden_bird:hover{
+    background:lightblue
 }
 
 .twitter_botton{
@@ -400,21 +443,58 @@ button{
 }
 
 .home_button{
-    width:100%;
+    width:70%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+    
+}
+
+.hidden_home{
+    cursor:pointer;
+}
+
+.hidden_home:hover .home_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .word_home{
-    font-style: bold;
+    font-size:1.5em;
+    margin-left:1em;
 }
 
 .explore_button{
-    width:100%;
+    width:70%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+
+.hidden_explore{
+    cursor:pointer;
+}
+
+.hidden_explore:hover .explore_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .explore{
@@ -424,13 +504,32 @@ button{
 
 .word_explore{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .notifications_button{
-    width:100%;
+    width:90%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+.hidden_notifications{
+    cursor:pointer;
+}
+
+.hidden_notifications:hover .notifications_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .notifications{
@@ -440,14 +539,34 @@ button{
 
 .word_notifications{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .messages_button{
-    width:100%;
+    width:85%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
 }
+
+.hidden_messages{
+    cursor:pointer;
+}
+
+.hidden_messages:hover .messages_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
+}
+
 
 .messages{
     width:2em;
@@ -456,13 +575,32 @@ button{
 
 .word_messages{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .bookmark_button{
-    width:100%;
+    width:90%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+.hidden_bookmark{
+    cursor:pointer;
+}
+
+.hidden_bookmark:hover .bookmark_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .bookmark{
@@ -472,13 +610,32 @@ button{
 
 .word_bookmark{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .lists_button{
-    width:100%;
+    width:70%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+.hidden_lists{
+    cursor:pointer;
+}
+
+.hidden_lists:hover .lists_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .lists{
@@ -488,13 +645,32 @@ button{
 
 .word_lists{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .profile_button{
-    width:100%;
+    width:80%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+.hidden_profile{
+    cursor:pointer;
+}
+
+.hidden_profile:hover .profile_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .profile{
@@ -504,13 +680,32 @@ button{
 
 .word_profile{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 .more_button{
-    width:100%;
+    width:70%;
     display:flex;
     justify-content: start;
     align-items: center;
+    outline:0;
+    border:none;
+    background-color: white;
+    background-color: transparent;
+    transition: 200ms;
+    padding:1em;
+    cursor:pointer;
+}
+
+.hidden_more{
+    cursor:pointer;
+}
+
+.hidden_.more:hover .more_button{
+    border-radius: 5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+
 }
 
 .more{
@@ -520,6 +715,8 @@ button{
 
 .word_more{
     font-style: bold;
+    font-size:1.3em;
+    margin-left:1em;
 }
 
 ul{
@@ -527,14 +724,33 @@ ul{
     padding:0;
 }
 
-.blue_botton{
+.blue_button{
     display:flex;
     justify-content: center;
 }
 
+.button{
+    display:flex;
+    justify-content: center;
+    border-radius: 5em;
+    background-color: rgb(29, 155, 240);
+    color:white;
+    font-size:1em;
+    width:13em;
+    padding:1em;
+    outline: 0;
+    border:none;
+    cursor: pointer;
+    transition:200ms;
+}
+
+.button:hover{
+    background-color:rgb(17, 140, 221);
+}
+
 li{
     line-height: 1em;
-    margin:2em;
+    margin:0.5em;
 }
 
 .foto_perfil{
@@ -542,30 +758,56 @@ li{
 }
 
 .avatar_button{
-    width:16em;
+    width:100%;
     display: flex;
     align-items: center;   
+    justify-content: space-around;
+    outline:0;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.nombre{
+    margin-left:1.5em;
+    display:flex;
+    align-items: center;
 }
 
 .dots{
     width:2em;       
 }
 
-.avatar_button{
+.avatar_button2{
     width:100%;
     height: 4em;
     display:flex;
     justify-content: space-between;
     padding:2em;
+    align-items: center;
+    cursor: pointer;
+}
+
+.symbols_box{
+    display:flex;
+    border-radius:50%;
+    height: 3vh;
+    margin:0.5em;
+    border-style: transparent; 
+    transition:200ms;
+    cursor: pointer;
+   
+}
+
+.symbols_box:hover{
+    background-color: lightblue;
 }
 
 .avatar_name{
     display:flex;
-
 }
 
 .nombre{
-    text-align: left;
-    
+    text-align: left;    
 }
 
