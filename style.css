@@ -57,6 +57,7 @@
     background-color: white;
     border-width: thin;
     transition:200ms;
+    outline: 1;
 }
 
 .google_button:hover{

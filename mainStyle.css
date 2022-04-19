@@ -165,13 +165,13 @@ body{
 .avatar_button{
     width:16em;
     display: flex;
-    align-items: center; 
-    
+    align-items: center;   
 }
+
+
 
 .dots{
     width:2em;
-       
 }
 
 .nombre{

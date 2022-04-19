@@ -1,7 +1,7 @@
 
 .container_general{
-    /* border-style: solid; */
-    /*border-color: hsl(0, 100%, 50%);*/ 
+    /* border-style: solid; 
+    border-color: hsl(0, 100%, 50%);  */
     display: grid;
     grid-template-columns: 2fr 5fr 3fr;
     max-width:80em;
@@ -9,8 +9,8 @@
   }
 
   .column_left{
-    /* border-style: solid; */
-    /* border-color: hsl(111, 100%, 50%);  */
+    /* border-style: solid; 
+    border-color: hsl(111, 100%, 50%);   */
     max-height: 98vh;
     display:flex;
     flex-direction: column;
@@ -18,12 +18,12 @@
   }
 
   .column_center{
-    /* border-style: solid; */
-    /* border-color: hsl(232, 100%, 50%);  */
-    max-height: 100vh; 
+    /* border-style: solid; 
+    border-color: hsl(232, 100%, 50%);  */
+    max-height: 140vh; 
     display:grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows:0.5fr 1fr 3fr 3fr
+    grid-template-rows:0.5fr 1fr 3fr 3fr;
   }
 
 .column_center > div{
@@ -79,7 +79,9 @@
 
 .foto_perfil1{
     width:4em;
+    cursor: pointer;
 }
+
 
 .flex_container3{
     display:flex;
@@ -114,49 +116,67 @@
 
 .sym1{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;   
 }
 
 .sym2{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;   
 }
 
 .sym3{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;    
 }
 
 .sym4{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;    
 }
 
 .sym5{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;    
 }
 
 .sym6{
     display:flex;
-    width:1.5em;
-    
+    width:1.5em;   
 }
 
 .tweet_button{
     display:flex;
-    align-items: center;   
+    align-items: center; 
+}
+
+button{
+    cursor: pointer;
+    outline:0;
+    border:none;
+    background-color: white;
+    transition: 200ms;
+}
+
+button:hover{
+    background-color:hsla(0, 14%, 86%, 0.48);
 }
 
 .button_tweet{
     display:flex;
     justify-content: center;
-    
+    border-radius:5em;
+    background-color: lightblue;
+    outline: 0;
+    border:none;
+    color:white;
+    font-size: 1em;
+    padding:0.5em;
+    width:6em;
+    margin-right:1em;
+}
+
+.button_tweet:hover{
+    background-color: lightblue;
 }
 
 .item_4{
@@ -194,6 +214,7 @@
 
 .bmw{
      display:flex;
+     
 }
 
 .dots1{
@@ -203,8 +224,9 @@
 
 .button_dots1{
     display:flex;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;   
+    border-radius:3em;
+    width:90%;
 }
 
 
@@ -223,8 +245,7 @@
 
 .button_pictures{
     width:100%;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .icons_bottom{
     display:flex;
@@ -242,6 +263,7 @@
     justify-content: center;
     outline: 0;
     border:none;
+    border-radius: 5em;
 }
 
 .button_arrow{
@@ -249,6 +271,7 @@
     justify-content: center;
     outline: 0;
     border:none;
+    border-radius: 5em;
 }
 
 .button_hearth{
@@ -256,6 +279,7 @@
     justify-content: center;
     outline: 0;
     border:none;
+    border-radius: 5em;
 }
 
 .button_upload{
@@ -263,6 +287,8 @@
     justify-content: center;
     outline: 0;
     border:none;
+    border-radius: 5em;
+
 }
 
 .talk{
@@ -287,7 +313,10 @@
     outline:0;
     border:none;
     background-color: white;
+    cursor: pointer;
 }
+
+
 
 .circulo2{
     width:4em;  
@@ -305,9 +334,10 @@
 .column_right{
     /* border-style: solid; */
     /* border-color: hsl(304, 100%, 50%);  */
-    min-height: 100vh;
+    max-height: 100vh;
     display:grid;
-    grid-template-rows: 0.5fr 6fr 3fr 0.5fr
+    grid-template-rows: 0.5fr 6fr 3fr 0.5fr;
+    margin-left:3em;
 }
 
 .search{
@@ -316,16 +346,17 @@
     outline: 0;
     border:none;
     margin-left:1em;
+    background-color:hsla(0, 7%, 92%, 0.615);
 }
 
 .search_button{
     display:flex;
 }
 
-.goblal_search{
-    border-style: solid;
-    border-color:rgb(29, 155, 240);
+.global_search{
     border-radius:5em;
+    background-color: hsla(0, 14%, 86%, 0.48);
+    padding:0.5em;
 }
 
 .search_icon{
@@ -348,6 +379,7 @@
 .flex_container6{
     /* border-style: solid; */
     /* border-color:rgb(0, 0, 0); */
+    margin-top:2em;
 } 
 
 .text_new{
@@ -367,6 +399,10 @@
     flex-direction: column;
 }
 
+.circulo1{
+    cursor: pointer;
+}
+
 .button_more{
     width:100%;
     color:rgb(29, 155, 240);
@@ -380,6 +416,7 @@
     border-style: solid;
     background-color: black;
     border-radius:5em;
+    padding:0.3em;
 }
 
 .folo{
@@ -702,7 +739,7 @@ button{
     cursor:pointer;
 }
 
-.hidden_.more:hover .more_button{
+.hidden_more:hover .more_button{
     border-radius: 5em;
     background-color: hsla(0, 14%, 86%, 0.48);
 
@@ -765,8 +802,13 @@ li{
     outline:0;
     border:none;
     background-color: white;
-    cursor: pointer;
-    
+    cursor: pointer;   
+    border-radius: 5em;
+    padding:1em;
+}
+
+.avatar_button:hover{
+    background-color:hsla(0, 14%, 86%, 0.48);
 }
 .nombre{
     margin-left:1.5em;
@@ -810,4 +852,5 @@ li{
 .nombre{
     text-align: left;    
 }
+
 
