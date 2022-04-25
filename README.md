@@ -21,7 +21,7 @@ La versión definitiva de la página principal es "mainV2.html", sin embargo gua
 
 - [Repo] https://github.com/Molerog/ReplicaTwitter/settings
 
-- [Live](<Homepage url> https://molerog.github.io/Proyecto.Pagina.Personal/)
+- [Live](<Homepage url> https://github.com/Molerog/ReplicaTwitter.git/)
 
 
 ## Screenshots
